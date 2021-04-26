@@ -11,9 +11,12 @@ namespace Lab5B
     public partial class MainPage : ContentPage
     {
         int CurrentQuestion;
-        string[] QuestionList = { "Do you prefer running or walking?", "How do you prefer to travel?",
-            "Which activity do you prefer?", "Which vehicle would you rather drive?", 
-            "Which sport would you rather watch?" };
+        string[] QuestionList = {
+                    "You prefer running than walking for exercise.",
+                    "You prefer traveling by airplane than train.",
+                    "You prefer riding a bike than go fishing.",
+                    "You prefer driving a car than a truck.",
+                    "You prefer watching football than watching baseball." };
         string[] OptionAList = { "running", "airplane", "bike riding", "car", "football" };
         string[] OptionBList = { "walking", "train", "fishing", "truck", "baseball" };
         List<string> ResponseList = new List<string>{ };
@@ -115,9 +118,9 @@ namespace Lab5B
         private void SetNewQuestion() {
             SurveyQuestion.Text = QuestionList[CurrentQuestion];
 
-            SurveyOptionA.Text = OptionAList[CurrentQuestion];
-            SurveyOptionA.ImageSource = ImageSource.FromFile("Lab5B.images.SeatedMonkey.jpg");
-            SurveyOptionB.Text = OptionBList[CurrentQuestion];
+            //SurveyOptionA.Text = OptionAList[CurrentQuestion];
+            //SurveyOptionA.ImageSource = ImageSource.FromFile("Lab5B.images.SeatedMonkey.jpg");
+            //SurveyOptionB.Text = OptionBList[CurrentQuestion];
         }
 
     }

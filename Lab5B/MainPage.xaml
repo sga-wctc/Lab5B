@@ -8,9 +8,9 @@
 
     <Grid Margin="15,15,15,20">
         <Grid.RowDefinitions>
-            <RowDefinition Height="50" />
-            <RowDefinition Height="350" />
-            <RowDefinition Height="100" />
+            <RowDefinition Height="45" />
+            <RowDefinition Height="410" />
+            <RowDefinition Height="75" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
@@ -31,7 +31,7 @@
             Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"
             IsVisible="false"  
             Font="Normal,20" />
-        <Button Text="left button"
+        <Button Text="True"
             x:Name="SurveyOptionA" 
             Clicked="OnButtonClicked_OptionA"
             Grid.Row="2" Grid.Column="0"
@@ -40,7 +40,7 @@
             CornerRadius="10"
             WidthRequest="150"
             HeightRequest="50" />
-        <Button Text="right buttone"
+        <Button Text="False"
             x:Name="SurveyOptionB"
             Clicked="OnButtonClicked_OptionB"
             Grid.Row="2" Grid.Column="1"
