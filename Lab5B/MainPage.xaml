@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lab5B.MainPage"
+             Title="Image Button Demo">
+
+
+
+    <Grid Margin="15,15,15,20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="350" />
+            <RowDefinition Height="100" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Label Text="Personality Quiz"
+            Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
+            TextColor="Black" Font="Bold,30" 
+             BackgroundColor="WhiteSmoke"/>
+        
+        <Label Text="question cell"
+            x:Name="SurveyQuestion"
+            Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"
+               />
+        <Label Text="question cell"
+            x:Name="SurveyResult"
+            Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"
+            IsVisible="false"  
+            Font="Normal,20" />
+        <Button Text="left button"
+            x:Name="SurveyOptionA" 
+            Clicked="OnButtonClicked_OptionA"
+            Grid.Row="2" Grid.Column="0"
+            BorderColor="Green"
+            BorderWidth="5"
+            CornerRadius="10"
+            WidthRequest="150"
+            HeightRequest="50" />
+        <Button Text="right buttone"
+            x:Name="SurveyOptionB"
+            Clicked="OnButtonClicked_OptionB"
+            Grid.Row="2" Grid.Column="1"
+            BorderColor="Red"
+            BorderWidth="5"
+            CornerRadius="10"
+            WidthRequest="150"
+            HeightRequest="50" />
+        <Button Text="Restart Survey"
+            x:Name="SurveyRestart"
+            Clicked="OnButtonClicked_Restart"
+            Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"
+            BorderColor="White"
+            BorderWidth="5"
+            CornerRadius="10"
+            WidthRequest="150"
+            HeightRequest="50"
+            IsEnabled="false"
+            IsVisible="false"/>
+
+    </Grid>
+
+</ContentPage>
